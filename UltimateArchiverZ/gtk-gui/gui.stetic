@@ -194,7 +194,6 @@
   </widget>
   <widget class="Gtk.Dialog" id="UltimateArchiverZ.CompressDialog" design-size="596 439">
     <property name="MemberName" />
-    <property name="Title" translatable="yes">window1</property>
     <property name="WindowPosition">CenterOnParent</property>
     <property name="Buttons">2</property>
     <property name="HelpButton">False</property>
@@ -319,24 +318,7 @@
                           <placeholder />
                         </child>
                         <child>
-                          <widget class="Stetic.Custom" id="custom2">
-                            <property name="MemberName" />
-                            <property name="Int1">0</property>
-                            <property name="Int2">0</property>
-                          </widget>
-                          <packing>
-                            <property name="LeftAttach">2</property>
-                            <property name="RightAttach">3</property>
-                            <property name="AutoSize">True</property>
-                            <property name="XOptions">Fill</property>
-                            <property name="YOptions">Fill</property>
-                            <property name="XExpand">False</property>
-                            <property name="XFill">True</property>
-                            <property name="XShrink">False</property>
-                            <property name="YExpand">False</property>
-                            <property name="YFill">True</property>
-                            <property name="YShrink">False</property>
-                          </packing>
+                          <placeholder />
                         </child>
                         <child>
                           <widget class="Gtk.CheckButton" id="passowrdCheckbox">
