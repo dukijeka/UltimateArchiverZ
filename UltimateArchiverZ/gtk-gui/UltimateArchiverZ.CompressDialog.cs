@@ -20,6 +20,16 @@ namespace UltimateArchiverZ
 
 		private global::Gtk.Entry fileNameEntry;
 
+		private global::Gtk.ScrolledWindow scrolledwindow1;
+
+		private global::Gtk.Table table3;
+
+		private global::Stetic.Custom custom2;
+
+		private global::Gtk.CheckButton passowrdCheckbox;
+
+		private global::Gtk.Entry passwordEntry;
+
 		private global::Gtk.Button buttonCancel;
 
 		private global::Gtk.Button buttonOk;
@@ -102,15 +112,67 @@ namespace UltimateArchiverZ
 			w8.Position = 1;
 			w8.Expand = false;
 			w8.Fill = false;
+			// Container child vbox2.Gtk.Box+BoxChild
+			this.scrolledwindow1 = new global::Gtk.ScrolledWindow();
+			this.scrolledwindow1.CanFocus = true;
+			this.scrolledwindow1.Name = "scrolledwindow1";
+			this.scrolledwindow1.ShadowType = ((global::Gtk.ShadowType)(1));
+			// Container child scrolledwindow1.Gtk.Container+ContainerChild
+			global::Gtk.Viewport w9 = new global::Gtk.Viewport();
+			w9.ShadowType = ((global::Gtk.ShadowType)(0));
+			// Container child GtkViewport.Gtk.Container+ContainerChild
+			this.table3 = new global::Gtk.Table(((uint)(3)), ((uint)(3)), false);
+			this.table3.Name = "table3";
+			this.table3.RowSpacing = ((uint)(6));
+			this.table3.ColumnSpacing = ((uint)(6));
+			// Container child table3.Gtk.Table+TableChild
+			this.custom2 = new global::Stetic.Custom();
+			this.custom2.Name = "custom2";
+			this.custom2.Int1 = 0;
+			this.custom2.Int2 = 0;
+			this.table3.Add(this.custom2);
+			global::Gtk.Table.TableChild w10 = ((global::Gtk.Table.TableChild)(this.table3[this.custom2]));
+			w10.LeftAttach = ((uint)(2));
+			w10.RightAttach = ((uint)(3));
+			w10.XOptions = ((global::Gtk.AttachOptions)(4));
+			w10.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table3.Gtk.Table+TableChild
+			this.passowrdCheckbox = new global::Gtk.CheckButton();
+			this.passowrdCheckbox.CanFocus = true;
+			this.passowrdCheckbox.Name = "passowrdCheckbox";
+			this.passowrdCheckbox.Label = global::Mono.Unix.Catalog.GetString("Protect the archive with password");
+			this.passowrdCheckbox.DrawIndicator = true;
+			this.passowrdCheckbox.UseUnderline = true;
+			this.table3.Add(this.passowrdCheckbox);
+			global::Gtk.Table.TableChild w11 = ((global::Gtk.Table.TableChild)(this.table3[this.passowrdCheckbox]));
+			w11.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table3.Gtk.Table+TableChild
+			this.passwordEntry = new global::Gtk.Entry();
+			this.passwordEntry.Sensitive = false;
+			this.passwordEntry.CanFocus = true;
+			this.passwordEntry.Name = "passwordEntry";
+			this.passwordEntry.IsEditable = true;
+			this.passwordEntry.Visibility = false;
+			this.passwordEntry.InvisibleChar = '•';
+			this.table3.Add(this.passwordEntry);
+			global::Gtk.Table.TableChild w12 = ((global::Gtk.Table.TableChild)(this.table3[this.passwordEntry]));
+			w12.LeftAttach = ((uint)(1));
+			w12.RightAttach = ((uint)(2));
+			w12.YOptions = ((global::Gtk.AttachOptions)(4));
+			w9.Add(this.table3);
+			this.scrolledwindow1.Add(w9);
+			this.vbox2.Add(this.scrolledwindow1);
+			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.scrolledwindow1]));
+			w15.Position = 2;
 			w1.Add(this.vbox2);
-			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(w1[this.vbox2]));
-			w9.Position = 0;
+			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(w1[this.vbox2]));
+			w16.Position = 0;
 			// Internal child UltimateArchiverZ.CompressDialog.ActionArea
-			global::Gtk.HButtonBox w10 = this.ActionArea;
-			w10.Name = "dialog1_ActionArea";
-			w10.Spacing = 10;
-			w10.BorderWidth = ((uint)(5));
-			w10.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
+			global::Gtk.HButtonBox w17 = this.ActionArea;
+			w17.Name = "dialog1_ActionArea";
+			w17.Spacing = 10;
+			w17.BorderWidth = ((uint)(5));
+			w17.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonCancel = new global::Gtk.Button();
 			this.buttonCancel.CanDefault = true;
@@ -120,9 +182,9 @@ namespace UltimateArchiverZ
 			this.buttonCancel.UseUnderline = true;
 			this.buttonCancel.Label = "gtk-cancel";
 			this.AddActionWidget(this.buttonCancel, -6);
-			global::Gtk.ButtonBox.ButtonBoxChild w11 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w10[this.buttonCancel]));
-			w11.Expand = false;
-			w11.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w18 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w17[this.buttonCancel]));
+			w18.Expand = false;
+			w18.Fill = false;
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonOk = new global::Gtk.Button();
 			this.buttonOk.CanDefault = true;
@@ -131,10 +193,10 @@ namespace UltimateArchiverZ
 			this.buttonOk.UseUnderline = true;
 			this.buttonOk.Label = global::Mono.Unix.Catalog.GetString("Compress");
 			this.AddActionWidget(this.buttonOk, -5);
-			global::Gtk.ButtonBox.ButtonBoxChild w12 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w10[this.buttonOk]));
-			w12.Position = 1;
-			w12.Expand = false;
-			w12.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w19 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w17[this.buttonOk]));
+			w19.Position = 1;
+			w19.Expand = false;
+			w19.Fill = false;
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
@@ -143,6 +205,7 @@ namespace UltimateArchiverZ
 			this.DefaultHeight = 439;
 			this.Show();
 			this.button40.Clicked += new global::System.EventHandler(this.onBrowseClicked);
+			this.passowrdCheckbox.Toggled += new global::System.EventHandler(this.OnPasswordCheckboxChecked);
 			this.buttonCancel.Clicked += new global::System.EventHandler(this.OnClickCancel);
 			this.buttonOk.Clicked += new global::System.EventHandler(this.OnCompressClicked);
 		}

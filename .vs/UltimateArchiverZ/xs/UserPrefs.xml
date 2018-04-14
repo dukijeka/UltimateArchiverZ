@@ -1,13 +1,12 @@
 ﻿<Properties StartupConfiguration="{500FCCAD-FDBD-47F6-80B9-D4ECB04D2AE2}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="UltimateArchiverZ/CompressDialog.cs">
     <Files>
-      <File FileName="UltimateArchiverZ/Program.cs" Line="13" Column="1" />
       <File FileName="UltimateArchiverZ/MainWindow.cs" Line="41" Column="43" />
-      <File FileName="UltimateArchiverZ/CompressDialog.cs" Line="49" Column="34" />
-      <File FileName="UltimateArchiverZ/Compressor.cs" Line="26" Column="2" />
-      <File FileName="UltimateArchiverZ/Command.cs" Line="4" Column="3" />
-      <File FileName="UltimateArchiverZ/BasicCommand.cs" Line="15" Column="3" />
-      <File FileName="UltimateArchiverZ/CommandWithOptions.cs" Line="7" Column="3" />
+      <File FileName="UltimateArchiverZ/CompressDialog.cs" Line="54" Column="67" />
+      <File FileName="UltimateArchiverZ/Program.cs" Line="13" Column="1" />
+      <File FileName="UltimateArchiverZ/CommandWithOptions.cs" Line="7" Column="36" />
+      <File FileName="UltimateArchiverZ/BasicCommand.cs" Line="15" Column="1" />
+      <File FileName="UltimateArchiverZ/PasswordProtectOptionCommand.cs" Line="17" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.UltimateArchiverZ PreferredExecutionTarget="MonoDevelop.Default" />

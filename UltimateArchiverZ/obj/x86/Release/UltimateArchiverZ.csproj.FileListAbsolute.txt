@@ -6,3 +6,10 @@
 /home/dusan/MEGA/CSharpProjects/UltimateArchiverZ/UltimateArchiverZ/obj/x86/Release/UltimateArchiverZ.csproj.CoreCompileInputs.cache
 /home/dusan/MEGA/CSharpProjects/UltimateArchiverZ/UltimateArchiverZ/obj/x86/Release/UltimateArchiverZ.exe
 /home/dusan/MEGA/CSharpProjects/UltimateArchiverZ/UltimateArchiverZ/obj/x86/Release/UltimateArchiverZ.csprojResolveAssemblyReference.cache
+/home/dusan/MEGA/CSharpProjects/UltimateArchiverZGitHub/UltimateArchiverZ/UltimateArchiverZ/bin/Release/UltimateArchiverZ.exe
+/home/dusan/MEGA/CSharpProjects/UltimateArchiverZGitHub/UltimateArchiverZ/UltimateArchiverZ/bin/Release/libstetic.pdb
+/home/dusan/MEGA/CSharpProjects/UltimateArchiverZGitHub/UltimateArchiverZ/UltimateArchiverZ/bin/Release/libstetic.xml
+/home/dusan/MEGA/CSharpProjects/UltimateArchiverZGitHub/UltimateArchiverZ/UltimateArchiverZ/bin/Release/libstetic.dll.config
+/home/dusan/MEGA/CSharpProjects/UltimateArchiverZGitHub/UltimateArchiverZ/UltimateArchiverZ/obj/x86/Release/UltimateArchiverZ.csprojResolveAssemblyReference.cache
+/home/dusan/MEGA/CSharpProjects/UltimateArchiverZGitHub/UltimateArchiverZ/UltimateArchiverZ/obj/x86/Release/UltimateArchiverZ.csproj.CoreCompileInputs.cache
+/home/dusan/MEGA/CSharpProjects/UltimateArchiverZGitHub/UltimateArchiverZ/UltimateArchiverZ/obj/x86/Release/UltimateArchiverZ.exe
