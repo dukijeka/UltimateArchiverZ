@@ -82,6 +82,7 @@
     <Compile Include="BasicCommand.cs" />
     <Compile Include="CommandWithOptions.cs" />
     <Compile Include="PasswordProtectOptionCommand.cs" />
+    <Compile Include="SplitIntoVolumesOptionCommand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

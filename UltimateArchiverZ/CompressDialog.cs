@@ -51,9 +51,21 @@ namespace UltimateArchiverZ {
             // if password protection option is turend on
             if (passowrdCheckbox.Active) {
                 string password = passwordEntry.Text;
-                commandToReturn = new PasswordProtectOptionCommand(commandToReturn, password);
+                commandToReturn = 
+                    new PasswordProtectOptionCommand(commandToReturn, password);
             }
 
+            // if splitting into volumes option is turned on
+            if (splitCheckbox.Active) {
+                int size; 
+                Int32.TryParse(splitSizeEntry.Text, out size);
+
+                string unit = splitSizeComboBox.ActiveText;
+
+                commandToReturn = 
+                    new SplitIntoVolumesOptionCommand(commandToReturn, size, unit);
+
+            }
 
 
             return commandToReturn;
@@ -75,6 +87,16 @@ namespace UltimateArchiverZ {
                 passwordEntry.Sensitive = true;
             } else {
                 passwordEntry.Sensitive = false;
+            }
+        }
+
+        protected void OnSplitChecked(object sender, EventArgs e) {
+            if (splitCheckbox.Active) {
+                splitSizeEntry.Sensitive = true;
+                splitSizeComboBox.Sensitive = true;
+            } else {
+                splitSizeEntry.Sensitive = false;
+                splitSizeComboBox.Sensitive = false;
             }
         }
     }

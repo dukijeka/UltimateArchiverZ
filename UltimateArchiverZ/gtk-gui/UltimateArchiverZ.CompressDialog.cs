@@ -30,6 +30,12 @@ namespace UltimateArchiverZ
 
 		private global::Gtk.Entry passwordEntry;
 
+		private global::Gtk.CheckButton splitCheckbox;
+
+		private global::Gtk.ComboBox splitSizeComboBox;
+
+		private global::Gtk.Entry splitSizeEntry;
+
 		private global::Gtk.Button buttonCancel;
 
 		private global::Gtk.Button buttonOk;
@@ -39,6 +45,7 @@ namespace UltimateArchiverZ
 			global::Stetic.Gui.Initialize(this);
 			// Widget UltimateArchiverZ.CompressDialog
 			this.Name = "UltimateArchiverZ.CompressDialog";
+			this.Title = global::Mono.Unix.Catalog.GetString("window1");
 			this.WindowPosition = ((global::Gtk.WindowPosition)(4));
 			// Internal child UltimateArchiverZ.CompressDialog.VBox
 			global::Gtk.VBox w1 = this.VBox;
@@ -159,20 +166,63 @@ namespace UltimateArchiverZ
 			w12.LeftAttach = ((uint)(1));
 			w12.RightAttach = ((uint)(2));
 			w12.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table3.Gtk.Table+TableChild
+			this.splitCheckbox = new global::Gtk.CheckButton();
+			this.splitCheckbox.CanFocus = true;
+			this.splitCheckbox.Name = "splitCheckbox";
+			this.splitCheckbox.Label = global::Mono.Unix.Catalog.GetString("Split into parts of size:");
+			this.splitCheckbox.DrawIndicator = true;
+			this.splitCheckbox.UseUnderline = true;
+			this.table3.Add(this.splitCheckbox);
+			global::Gtk.Table.TableChild w13 = ((global::Gtk.Table.TableChild)(this.table3[this.splitCheckbox]));
+			w13.TopAttach = ((uint)(1));
+			w13.BottomAttach = ((uint)(2));
+			w13.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table3.Gtk.Table+TableChild
+			this.splitSizeComboBox = global::Gtk.ComboBox.NewText();
+			this.splitSizeComboBox.AppendText(global::Mono.Unix.Catalog.GetString("b"));
+			this.splitSizeComboBox.AppendText(global::Mono.Unix.Catalog.GetString("kb"));
+			this.splitSizeComboBox.AppendText(global::Mono.Unix.Catalog.GetString("mb"));
+			this.splitSizeComboBox.AppendText(global::Mono.Unix.Catalog.GetString("gb"));
+			this.splitSizeComboBox.Sensitive = false;
+			this.splitSizeComboBox.Name = "splitSizeComboBox";
+			this.splitSizeComboBox.Active = 0;
+			this.table3.Add(this.splitSizeComboBox);
+			global::Gtk.Table.TableChild w14 = ((global::Gtk.Table.TableChild)(this.table3[this.splitSizeComboBox]));
+			w14.TopAttach = ((uint)(1));
+			w14.BottomAttach = ((uint)(2));
+			w14.LeftAttach = ((uint)(2));
+			w14.RightAttach = ((uint)(3));
+			w14.XOptions = ((global::Gtk.AttachOptions)(4));
+			w14.YOptions = ((global::Gtk.AttachOptions)(4));
+			// Container child table3.Gtk.Table+TableChild
+			this.splitSizeEntry = new global::Gtk.Entry();
+			this.splitSizeEntry.Sensitive = false;
+			this.splitSizeEntry.CanFocus = true;
+			this.splitSizeEntry.Name = "splitSizeEntry";
+			this.splitSizeEntry.IsEditable = true;
+			this.splitSizeEntry.InvisibleChar = '•';
+			this.table3.Add(this.splitSizeEntry);
+			global::Gtk.Table.TableChild w15 = ((global::Gtk.Table.TableChild)(this.table3[this.splitSizeEntry]));
+			w15.TopAttach = ((uint)(1));
+			w15.BottomAttach = ((uint)(2));
+			w15.LeftAttach = ((uint)(1));
+			w15.RightAttach = ((uint)(2));
+			w15.YOptions = ((global::Gtk.AttachOptions)(4));
 			w9.Add(this.table3);
 			this.scrolledwindow1.Add(w9);
 			this.vbox2.Add(this.scrolledwindow1);
-			global::Gtk.Box.BoxChild w15 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.scrolledwindow1]));
-			w15.Position = 2;
+			global::Gtk.Box.BoxChild w18 = ((global::Gtk.Box.BoxChild)(this.vbox2[this.scrolledwindow1]));
+			w18.Position = 2;
 			w1.Add(this.vbox2);
-			global::Gtk.Box.BoxChild w16 = ((global::Gtk.Box.BoxChild)(w1[this.vbox2]));
-			w16.Position = 0;
+			global::Gtk.Box.BoxChild w19 = ((global::Gtk.Box.BoxChild)(w1[this.vbox2]));
+			w19.Position = 0;
 			// Internal child UltimateArchiverZ.CompressDialog.ActionArea
-			global::Gtk.HButtonBox w17 = this.ActionArea;
-			w17.Name = "dialog1_ActionArea";
-			w17.Spacing = 10;
-			w17.BorderWidth = ((uint)(5));
-			w17.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
+			global::Gtk.HButtonBox w20 = this.ActionArea;
+			w20.Name = "dialog1_ActionArea";
+			w20.Spacing = 10;
+			w20.BorderWidth = ((uint)(5));
+			w20.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonCancel = new global::Gtk.Button();
 			this.buttonCancel.CanDefault = true;
@@ -182,9 +232,9 @@ namespace UltimateArchiverZ
 			this.buttonCancel.UseUnderline = true;
 			this.buttonCancel.Label = "gtk-cancel";
 			this.AddActionWidget(this.buttonCancel, -6);
-			global::Gtk.ButtonBox.ButtonBoxChild w18 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w17[this.buttonCancel]));
-			w18.Expand = false;
-			w18.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w21 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w20[this.buttonCancel]));
+			w21.Expand = false;
+			w21.Fill = false;
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonOk = new global::Gtk.Button();
 			this.buttonOk.CanDefault = true;
@@ -193,10 +243,10 @@ namespace UltimateArchiverZ
 			this.buttonOk.UseUnderline = true;
 			this.buttonOk.Label = global::Mono.Unix.Catalog.GetString("Compress");
 			this.AddActionWidget(this.buttonOk, -5);
-			global::Gtk.ButtonBox.ButtonBoxChild w19 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w17[this.buttonOk]));
-			w19.Position = 1;
-			w19.Expand = false;
-			w19.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w22 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w20[this.buttonOk]));
+			w22.Position = 1;
+			w22.Expand = false;
+			w22.Fill = false;
 			if ((this.Child != null))
 			{
 				this.Child.ShowAll();
@@ -205,6 +255,7 @@ namespace UltimateArchiverZ
 			this.DefaultHeight = 439;
 			this.Show();
 			this.button40.Clicked += new global::System.EventHandler(this.onBrowseClicked);
+			this.splitCheckbox.Toggled += new global::System.EventHandler(this.OnSplitChecked);
 			this.passowrdCheckbox.Toggled += new global::System.EventHandler(this.OnPasswordCheckboxChecked);
 			this.buttonCancel.Clicked += new global::System.EventHandler(this.OnClickCancel);
 			this.buttonOk.Clicked += new global::System.EventHandler(this.OnCompressClicked);
