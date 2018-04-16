@@ -23,13 +23,7 @@ public partial class MainWindow
 
 	private global::Gtk.ScrolledWindow scrolledwindow1;
 
-	private global::Gtk.Table table1;
-
-	private global::Gtk.Label label1;
-
-	private global::Gtk.Label label2;
-
-	private global::Gtk.Label label4;
+	private global::Gtk.NodeView listOfFilesNodeView;
 
 	protected virtual void Build()
 	{
@@ -78,48 +72,13 @@ public partial class MainWindow
 		this.scrolledwindow1.Name = "scrolledwindow1";
 		this.scrolledwindow1.ShadowType = ((global::Gtk.ShadowType)(1));
 		// Container child scrolledwindow1.Gtk.Container+ContainerChild
-		global::Gtk.Viewport w3 = new global::Gtk.Viewport();
-		w3.ShadowType = ((global::Gtk.ShadowType)(0));
-		// Container child GtkViewport.Gtk.Container+ContainerChild
-		this.table1 = new global::Gtk.Table(((uint)(3)), ((uint)(3)), true);
-		this.table1.Name = "table1";
-		this.table1.RowSpacing = ((uint)(6));
-		this.table1.ColumnSpacing = ((uint)(6));
-		this.table1.BorderWidth = ((uint)(10));
-		// Container child table1.Gtk.Table+TableChild
-		this.label1 = new global::Gtk.Label();
-		this.label1.Name = "label1";
-		this.label1.LabelProp = global::Mono.Unix.Catalog.GetString("Name");
-		this.label1.Justify = ((global::Gtk.Justification)(3));
-		this.table1.Add(this.label1);
-		global::Gtk.Table.TableChild w4 = ((global::Gtk.Table.TableChild)(this.table1[this.label1]));
-		w4.XOptions = ((global::Gtk.AttachOptions)(4));
-		w4.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child table1.Gtk.Table+TableChild
-		this.label2 = new global::Gtk.Label();
-		this.label2.Name = "label2";
-		this.label2.LabelProp = global::Mono.Unix.Catalog.GetString("Size");
-		this.table1.Add(this.label2);
-		global::Gtk.Table.TableChild w5 = ((global::Gtk.Table.TableChild)(this.table1[this.label2]));
-		w5.LeftAttach = ((uint)(1));
-		w5.RightAttach = ((uint)(2));
-		w5.XOptions = ((global::Gtk.AttachOptions)(4));
-		w5.YOptions = ((global::Gtk.AttachOptions)(4));
-		// Container child table1.Gtk.Table+TableChild
-		this.label4 = new global::Gtk.Label();
-		this.label4.Name = "label4";
-		this.label4.LabelProp = global::Mono.Unix.Catalog.GetString("Modified");
-		this.table1.Add(this.label4);
-		global::Gtk.Table.TableChild w6 = ((global::Gtk.Table.TableChild)(this.table1[this.label4]));
-		w6.LeftAttach = ((uint)(2));
-		w6.RightAttach = ((uint)(3));
-		w6.XOptions = ((global::Gtk.AttachOptions)(4));
-		w6.YOptions = ((global::Gtk.AttachOptions)(4));
-		w3.Add(this.table1);
-		this.scrolledwindow1.Add(w3);
+		this.listOfFilesNodeView = new global::Gtk.NodeView();
+		this.listOfFilesNodeView.CanFocus = true;
+		this.listOfFilesNodeView.Name = "listOfFilesNodeView";
+		this.scrolledwindow1.Add(this.listOfFilesNodeView);
 		this.vbox1.Add(this.scrolledwindow1);
-		global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.scrolledwindow1]));
-		w9.Position = 1;
+		global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox1[this.scrolledwindow1]));
+		w4.Position = 1;
 		this.Add(this.vbox1);
 		if ((this.Child != null))
 		{
